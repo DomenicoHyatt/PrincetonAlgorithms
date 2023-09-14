@@ -1,9 +1,9 @@
 .PHONY: py
 py:
-	fine tests py -name \*.py
+	fine tests py -name \#.py
 
 p:
-	find py -name \*.py
+	find py -name \!.py
 
 t:
 	find tests -name \*.py
@@ -16,3 +16,4 @@ pylint:
 clean:
 	rm -f tmp_pylint
 	rm -f *.png
+ 
